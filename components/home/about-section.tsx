@@ -1,8 +1,19 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { Sparkles, Brain, Users, Lightbulb } from "lucide-react"
+import {
+  Sparkles,
+  FlaskRoundIcon as Flask,
+  Code,
+  BookOpen,
+  Gamepad,
+  Brain,
+  Users,
+  Lightbulb,
+  Music,
+  Puzzle,
+  CastleIcon as ChessKnight,
+} from "lucide-react"
 import SectionObserver from "@/components/section-observer"
-import { interests } from "@/lib/utils/interests"
 
 // Qualities data
 const qualities = [
@@ -73,12 +84,34 @@ export default function AboutSection() {
               <div className="pt-4">
                 <h3 className="text-xl font-semibold mb-2">My Interests</h3>
                 <div className="grid grid-cols-2 gap-2">
-                  {interests.map((interest, index) => (
-                    <div key={index} className="flex items-center gap-2 bg-background p-2 rounded-md">
-                      {interest.icon}
-                      <span>{interest.name}</span>
-                    </div>
-                  ))}
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <Gamepad className="h-5 w-5 text-ayaan-yellow" />
+                    <span>Nintendo Gaming</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <Flask className="h-5 w-5 text-ayaan-teal" />
+                    <span>Science Experiments</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <Code className="h-5 w-5 text-ayaan-yellow" />
+                    <span>Coding & AI</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <BookOpen className="h-5 w-5 text-ayaan-teal" />
+                    <span>Reading & Writing</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <Music className="h-5 w-5 text-ayaan-yellow" />
+                    <span>Playing Piano</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <Puzzle className="h-5 w-5 text-ayaan-teal" />
+                    <span>Solving Rubik's Cube</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background p-2 rounded-md">
+                    <ChessKnight className="h-5 w-5 text-ayaan-yellow" />
+                    <span>Playing Chess</span>
+                  </div>
                 </div>
               </div>
             </div>

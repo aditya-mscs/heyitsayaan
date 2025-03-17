@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ChevronRight, ExternalLink } from "lucide-react"
 import SectionObserver from "@/components/section-observer"
-import { updatesData } from "@/lib/utils/updates-data"
+import { updatesData } from "@/lib/data"
 
 // Categories for filtering
 const categories = ["All", "Academic", "Award", "YouTube", "Science", "Coding", "Website"]

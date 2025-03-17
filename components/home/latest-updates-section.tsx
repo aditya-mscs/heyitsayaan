@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChevronRight, ExternalLink, Zap } from "lucide-react"
 import SectionObserver from "@/components/section-observer"
-import { updatesData } from "@/lib/utils/updates-data"
+import { updatesData } from "@/lib/data"
 
 export default function LatestUpdatesSection() {
   // Get the 3 most recent updates

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Calendar, ChevronRight } from "lucide-react"
 import SectionObserver from "@/components/section-observer"
-import { timelineData } from "@/lib/utils/timeline-data"
+import { timelineData } from "@/lib/data"
 
 export default function TimelineSection() {
   return (

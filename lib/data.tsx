@@ -1,7 +1,24 @@
 import { Pi, Heart, Code, Youtube, FlaskRoundIcon as Flask, Award, Brain } from "lucide-react"
-import type { UpdateItem } from "@/lib/utils/types"
-import { piValue } from "./pi-value"
+import type { ReactNode } from "react"
 
+// Value of Pi to 250 decimal places
+export const piValue =
+  "3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273724587006606315588174881520920962829254091715364367892590360011330530548820466521384146951941511609433057270365759591953092186117381932611793105118548074462379962749567351885752724891227938183011949129833673362440656643086021394946395224737190702217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989"
+
+export interface UpdateItem {
+  id: string
+  title: string
+  date: string
+  description: string
+  link: string
+  linkText: string
+  category: string
+  icon: ReactNode
+  image: string
+  extraContent?: ReactNode
+}
+
+// Shared updates data
 export const updatesData: UpdateItem[] = [
   {
     id: "pi-day-competition",
@@ -116,6 +133,38 @@ export const updatesData: UpdateItem[] = [
     category: "YouTube",
     icon: <Youtube className="h-5 w-5 text-red-600" />,
     image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=2619&auto=format&fit=crop",
+  },
+]
+
+// Timeline data
+export const timelineData = [
+  {
+    date: "March 14, 2025",
+    title: "Pi Day Competition Winner",
+    description: "Won first prize by reciting Pi to 250 decimal places at PS25 in Jersey City.",
+    icon: <Pi className="h-5 w-5 text-ayaan-yellow" />,
+    link: "/extra-curriculars/pi-day-competition",
+  },
+  {
+    date: "March 14, 2025",
+    title: "Humble and Kindness Award",
+    description: "Received the 'Humble and Kindness' award at PS25 for demonstrating exceptional character.",
+    icon: <Heart className="h-5 w-5 text-red-500" />,
+    link: "/extra-curriculars/humble-kindness-award",
+  },
+  {
+    date: "February 28, 2025",
+    title: "First Honor Roll",
+    description: "Received First Honor Roll recognition for academic excellence in all subjects.",
+    icon: <Award className="h-5 w-5 text-ayaan-yellow" />,
+    link: "/academics",
+  },
+  {
+    date: "January 13, 2025",
+    title: "Star Math Assessment",
+    description: "Scored in the 99th percentile nationally in the Math Olympiad for elementary students.",
+    icon: <Brain className="h-5 w-5 text-ayaan-yellow" />,
+    link: "/academics",
   },
 ]
 

@@ -1,6 +1,6 @@
 import { Pi, Heart, Code, Youtube, FlaskRoundIcon as Flask, Award, Brain } from "lucide-react"
 import type { UpdateItem } from "./types"
-import { piValue } from "./pi-value"
+import { PiDayContent } from "@/components/extra-content/pi-day-content"
 
 export const updatesData: UpdateItem[] = [
   {
@@ -14,12 +14,7 @@ export const updatesData: UpdateItem[] = [
     category: "Academic",
     icon: <Pi className="h-5 w-5 text-ayaan-yellow" />,
     image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop",
-    extraContent: (
-      <div className="mt-4 p-4 bg-muted/30 rounded-lg overflow-x-auto">
-        <h4 className="font-semibold mb-2">Value of Pi to 250 decimal places:</h4>
-        <p className="text-sm font-mono break-all">{piValue}</p>
-      </div>
-    ),
+    extraContent: PiDayContent,
   },
   {
     id: "humble-kindness-award",

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChevronLeft, Pi, Trophy, Calculator, Brain } from "lucide-react"
 import SectionObserver from "@/components/section-observer"
-import { piValue } from "@/lib/utils/pi-value"
+import { piValue } from "@/lib/data"
 
 export default function PiDayCompetitionPage() {
   return (
